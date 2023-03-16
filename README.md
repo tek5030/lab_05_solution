@@ -5,16 +5,17 @@ This is our proposed solution for the lab ["Pose and camera geometry"][repo] in 
 Please see the [lab guide][guide] for more information.
 
 ## Prerequisites
-- [Ensure Conan is installed on your system][conan], unless you are not on a lab computer.
-- Install project dependencies using conan:
 
-   ```bash
-   # git clone https://github.com/tek5030/solution-camera-pose.git
-   # cd solution-camera-pose
+For this lab, we can unfortunately not rely on conan to install all required OpenCV modules (namely the `viz` module for 3D visualization). You have a few other options:
 
-   conan install . --install-folder=build --build=missing
-   ```
-- When you configure the project in CLion, remember to set `build` as the _Build directory_, as described in [lab_intro].
+- Solve the [python lab](https://github.com/tek5030/lab-camera-pose-py)
+- Use the lab computers
+- Install OpenCV using [homebrew](https://brew.sh/) (option for mac and linux). (See also [Getting started on MacOS](https://tek5030.github.io/tutorial/macos.html).)
+- Rely on virtualbox and our prepared linux image with dependencies preinstalled (see [Canvas: Setting up your computer for the labs](https://uio.instructure.com/courses/44675/discussion_topics/295673))
+
+[TEK5030]: https://www.uio.no/studier/emner/matnat/its/TEK5030/
+[conan]: https://tek5030.github.io/tutorial/conan.html
+[lab_intro]: https://github.com/tek5030/lab-intro/blob/master/cpp/lab-guide/1-open-project-in-clion.md#6-configure-project
 
 [repo]:  https://github.com/tek5030/lab-camera-pose
 [guide]: https://github.com/tek5030/lab-camera-pose/blob/master/README.md
